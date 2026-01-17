@@ -4,3 +4,57 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* world css */
+.container{
+    width: 80%;
+    margin: auto;
+}
+li{
+    list-style: none;
+}
+a{ 
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* main-section */
+main{
+    height:100vh;
+    background-color: #030915;
+    color: white;
+}
+/* header-section */
+.navbar ul {
+    display: flex;
+    gap: 2rem;
+}
+.navbar ul li a {
+    color: white;
+    font-size: 1.2rem;
+}
+.humberger{
+    display: none;
+}
+/* hero-section */
+.hero-text{
+    width: 800px;
+    flex: 1;
+}
+.hero-text h1{
+    width: 559px    ;
+    font-size: 5rem;
+}
+.hero-text p{
+    width: 426px;
+    font-size: 24px;
+    color: #CACACA;
+}
+.hero-text button a {
+    width: 240px;
+}
+.car-hero img{
+    max-width: 700px;
+}
