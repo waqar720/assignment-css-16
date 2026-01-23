@@ -23,38 +23,134 @@ a{
 /* main-section */
 main{
     height:100vh;
+    position: relative;
     background-color: #030915;
-    color: white;
-}
+    color: white;}
 /* header-section */
 .navbar ul {
     display: flex;
-    gap: 2rem;
+    gap: 1.2rem;
 }
 .navbar ul li a {
     color: white;
     font-size: 1.2rem;
 }
+.logo{
+    padding: 15px;
+    z-index: 1;
+}
 .humberger{
     display: none;
 }
+.humberger i{
+    font-size: 2rem;
+}
 /* hero-section */
+#hero-section{
+    height: 80vh;
+    background-color: #030915;
+}
 .hero-text{
-    width: 800px;
-    flex: 1;
+    max-width: 37vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    z-index: 1;
+
+}
+.hero-text{
+    max-width:800px;
+    position: relative;
+    bottom: 20px;
+}
+.hero-row{
+    position: relative;
 }
 .hero-text h1{
-    width: 559px    ;
-    font-size: 5rem;
+    position: relative;
+    font-size: 4.50rem;
 }
 .hero-text p{
-    width: 426px;
-    font-size: 24px;
+    position: relative;
+    font-size: 1.5rem;
     color: #CACACA;
 }
-.hero-text button a {
-    width: 240px;
+.hero-text button{
+    max-width:220px; 
+    width: 100%;
+    height:70px;
+    border-radius: 7px;
+    border: 1px solid white;
+    background-color:transparent ;
+}
+.hero-text button a{
+    font-size: 20px;
+    color: #F3F4F6;
+}
+.car-hero{
+    position: relative;
+    top: 135px;
+    left: 10px;
+    z-index: 1;
 }
 .car-hero img{
-    max-width: 700px;
+    max-width: 690px;  
+    height: 450px;
+}
+/* shapes */
+.cicles{
+    position: absolute;
+}
+.shape-1{
+    width: 40%;
+    left: 400px;
+    
+}
+.shape-2{
+    width: 24%;
+    
+}
+.shape-3{
+    width: 4%;
+}
+.shape-4{
+    width: 3%;
+}
+
+
+@media (max-width:480px){
+    .hero-row{
+        flex-direction: column;
+    }
+    html{
+        font-size: 10px;
+    }
+    .container{
+        width: 100%;
+        padding: 1rem;
+    }
+    .navbar{
+        display: none;
+    }
+    .car-hero{
+        position: absolute;
+        right: 30px;
+        top: 280px;
+    }
+    .car-hero img{
+        max-width: 400px;
+        height: 300px; 
+    }
+    .humberger{
+        display: block;
+        cursor: pointer;
+    }
+    .hero-text{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-text{
+        width: 100%;
+    }
 }
