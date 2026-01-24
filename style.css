@@ -89,7 +89,7 @@ main{
 }
 .car-hero{
     position: relative;
-    top: 135px;
+    top: 170px;
     left: 10px;
     z-index: 1;
 }
@@ -99,26 +99,38 @@ main{
 }
 /* shapes */
 .cicles{
-    position: absolute;
+    position: relative;
 }
 .shape-1{
-    width: 40%;
-    left: 400px;
-    
+    position: absolute;
+    width: 50%;
+    right:0px ;
+    bottom: 0px;  
 }
 .shape-2{
-    width: 24%;
-    
+    position: absolute;
+    width: 20%;  
+    left: 0px;
+    top: 0px;
 }
 .shape-3{
-    width: 4%;
+    position: absolute;
+    width: 6%;
+    left: 190px;
+    bottom: 40px;
 }
 .shape-4{
+    position: absolute;
     width: 3%;
+    right:410px;
+    top:110px;
 }
 
 
 @media (max-width:480px){
+    .circle{
+        display: none;
+    }
     .hero-row{
         flex-direction: column;
     }
@@ -133,13 +145,13 @@ main{
         display: none;
     }
     .car-hero{
-        position: absolute;
-        right: 30px;
-        top: 280px;
+        position: relative;
+        left: 0;
+        top: 40px;
     }
     .car-hero img{
-        max-width: 400px;
-        height: 300px; 
+        max-width: 350px;
+        height: 200px; 
     }
     .humberger{
         display: block;
