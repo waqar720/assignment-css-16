@@ -89,7 +89,7 @@ main{
 }
 .car-hero{
     position: relative;
-    top: 170px;
+    top: 140px;
     left: 10px;
     z-index: 1;
 }
@@ -117,13 +117,18 @@ main{
     position: absolute;
     width: 6%;
     left: 190px;
-    bottom: 40px;
+    bottom: 10px;
 }
 .shape-4{
     position: absolute;
     width: 3%;
     right:410px;
     top:110px;
+}
+.tabs-grid{
+    padding: 185px 0px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
 }
 
 
@@ -164,5 +169,10 @@ main{
     }
     .hero-text{
         width: 100%;
+    }
+    .tabs-grid{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
